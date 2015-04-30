@@ -8,21 +8,21 @@ Works in every browser that supports CSS Animations: http://caniuse.com/#feat=cs
  
 ## Usage
  
-1. Link to the `horizontal-loader.css` in your HTML
+1. Download and link to `horizontal-loader.css` in your HTML
 2. Add the loader div similar to this:
-	```
-	<div class="loader">
-    	<div></div>
-    	<div></div>
-    	<div></div>
-    	<div></div>
-    	<div></div>
-    </div>
+	```html
+		<div class="loader">
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	    </div>
 	```
 3. Test in your favorite browser (your favorite browser was not released before 2012, right?)
  
 ## Feel free to fork and customize! 
 
-Licensed under MIT License
+Licensed under the MIT License
 
 Copyright (c) 2015 Hrant Khachatrian, Zaven Lalayan
