@@ -1,0 +1,65 @@
+/* the container for the dots */
+.loader{
+	position:relative; /* dots are positioned against the container */
+	overflow:hidden; /* dots should not be visible beyond the container */
+
+	/* container styles: feel free to change */
+	width: 100%;
+	height: 50px;
+}
+
+/* the dots */
+.loader div{
+	position:absolute;
+	left:-5%; /* at first they are hidden to the left of the container */
+
+	/* -webkit- prefix is required to support Chrome etc. */
+	-webkit-animation-name: horizontal-loader; /* the name of the animation */
+	animation-name: horizontal-loader;
+
+	-webkit-animation-duration: 3s; /* self-explanatory :) */
+	animation-duration: 3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: cubic-bezier(0,.67,.99,.34); /* feel free to fine tune the easing */
+	animation-timing-function: cubic-bezier(0,.67,.99,.34);
+	animation-iteration-count:infinite;
+	-webkit-animation-iteration-count:infinite;
+
+	/* dot styles: feel free to change */
+	width: 6px;
+	height: 6px;
+	background: #333;
+	border-radius: 100%;
+	top:20px;
+}
+
+/* these delays control the distance between dots */
+.loader div:nth-child(2){
+	-webkit-animation-delay: 0.08s;
+	animation-delay: 0.08s;
+}
+.loader div:nth-child(3){
+	-webkit-animation-delay: 0.16s;
+	animation-delay: 0.16s;
+}
+.loader div:nth-child(4){
+	-webkit-animation-delay: 0.24s;
+	animation-delay: 0.24s;
+}
+.loader div:nth-child(5){
+	-webkit-animation-delay: 0.32s;
+	animation-delay: 0.32s;
+}
+
+/* declaration of the animation */
+/* the values 10% and 90% (which is just 100%-10%) control the delay between animation loops */
+@-webkit-keyframes horizontal-loader {
+	10%, 90.01% {left:-5%;}
+	90% {left:105%;}
+}
+
+@keyframes horizontal-loader {
+	10%, 90.01% {left:-5%;}
+	90% {left:105%;}
+}
