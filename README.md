@@ -12,6 +12,7 @@ Demo: http://hrant-khachatrian.github.io/horizontal-loader-metro-style/
  
 1. Download and link to `horizontal-loader.css` in your HTML
 2. Add the loader div similar to this:
+   
     ```html
         <div class="loader">
             <div></div>
@@ -21,6 +22,7 @@ Demo: http://hrant-khachatrian.github.io/horizontal-loader-metro-style/
             <div></div>
         </div>
     ```
+    
 3. Test in your favorite browser (your favorite browser was not released before 2012, right?)
  
 ## Feel free to fork and customize! 
