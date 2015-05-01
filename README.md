@@ -10,7 +10,7 @@ Works in every browser that supports CSS Animations: http://caniuse.com/#feat=cs
  
 1. Download and link to `horizontal-loader.css` in your HTML
 2. Add the loader div similar to this:
-	```html
+```html
 		<div class="loader">
 	        <div></div>
 	        <div></div>
@@ -18,7 +18,7 @@ Works in every browser that supports CSS Animations: http://caniuse.com/#feat=cs
 	        <div></div>
 	        <div></div>
 	    </div>
-	```
+```
 3. Test in your favorite browser (your favorite browser was not released before 2012, right?)
  
 ## Feel free to fork and customize! 
